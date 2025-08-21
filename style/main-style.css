@@ -1,7 +1,7 @@
 /*Predefined Variables*/
 :root {
   /* --primary-color: #0d6efd; */
-  --primary-color : #6495ed;
+  --primary-color : #0D6EFD;
   --light-blue-bg: #e9f4ff;
   --white-color: #ffffff;
   --text-color: #212529;
@@ -92,6 +92,27 @@ body {
   font-size: 1.2rem;
   color: var(--white-color);
 }
+
+/*For the Sideabr Animation*/
+.sidebar-dropdown {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.4s ease;
+}
+
+.sidebar-dropdown.open {
+  height: auto;
+  padding-left: 20px;
+}
+
+.arrow-icon {
+  transition: transform 0.3s ease;
+}
+
+.arrow-icon.rotate {
+  transform: rotate(180deg);
+}
+
 
 
 /*================*/

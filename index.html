@@ -51,24 +51,53 @@
             </li>
             <!--Here we need the Pre-Call and Post-Call -->
             <!--Having two column setup-->
-            <li class="nav-item">
+
+            <!-- <li class="nav-item">
               <a class="nav-link" href="./Pages/caller.html">
                 <i class="ph ph-user-list"></i>
                 <span>Calls</span>
               </a>
+            </li> -->
+
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="toggleDropdown(event)">
+                <i class="ph ph-user-list"></i>
+                <span>Calls</span>
+                <i class="ph ph-caret-down arrow-icon"></i>
+              </a>
+              <ul class="sidebar-dropdown">
+                <li>
+                  <a class="nav-link dropdown-item" href="#">
+                    <i class="ph ph-phone-call"></i>
+                    <span>Precall</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="nav-link dropdown-item"
+                    href="./Pages/postcall.html"
+                  >
+                    <i class="ph ph-phone-disconnect"></i>
+                    <span>Post Call</span>
+                  </a>
+                </li>
+              </ul>
             </li>
+
             <li class="nav-item">
               <a class="nav-link" href="#">
                 <i class="ph ph-chart-bar"></i>
                 <span>Predective Analytics</span>
               </a>
             </li>
+
             <li class="nav-item">
               <a class="nav-link" href="./pages/reports.html">
                 <i class="ph ph-chat-circle-dots"></i>
                 <span>Reports</span>
               </a>
             </li>
+
             <li class="nav-item">
               <a class="nav-link" href="./pages/settings.html">
                 <i class="ph ph-gear"></i>
@@ -375,6 +404,25 @@
             </div>
           </div>
         </div>
+        <script>
+          function toggleDropdown(event) {
+            event.preventDefault();
+            const parent = event.currentTarget.parentElement;
+            const dropdown = parent.querySelector(".sidebar-dropdown");
+            const arrow = parent.querySelector(".arrow-icon");
+
+            if (dropdown.classList.contains("open")) {
+              dropdown.style.height = "0px";
+              dropdown.classList.remove("open");
+              arrow.classList.remove("rotate");
+            } else {
+              dropdown.style.height = dropdown.scrollHeight + "px";
+              dropdown.classList.add("open");
+              arrow.classList.add("rotate");
+            }
+          }
+        </script>
+
         <!--Ending the one more row-->
         <footer class="text-center text-muted" style="margin-top: 10px">
           <small style="color: #6495ed; font-weight: 800"
