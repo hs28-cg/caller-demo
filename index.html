@@ -44,8 +44,8 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./Pages/caller.html">
-                <i class="ph ph-user-list"></i>
+              <a class="nav-link" href="./pages/caller.html">
+                <i class="ph ph-bell"></i>
                 <span>Caller</span>
               </a>
             </li>
@@ -85,13 +85,6 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#">
-                <i class="ph ph-chart-bar"></i>
-                <span>Predective Analytics</span>
-              </a>
-            </li>
-
-            <li class="nav-item">
               <a class="nav-link" href="./pages/reports.html">
                 <i class="ph ph-chat-circle-dots"></i>
                 <span>Reports</span>
@@ -99,7 +92,14 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="./pages/settings.html">
+              <a class="nav-link" href="#">
+                <i class="ph ph-chart-bar"></i>
+                <span>Predective Analytics</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">
                 <i class="ph ph-gear"></i>
                 <span>Settings</span>
               </a>
@@ -404,24 +404,6 @@
             </div>
           </div>
         </div>
-        <script>
-          function toggleDropdown(event) {
-            event.preventDefault();
-            const parent = event.currentTarget.parentElement;
-            const dropdown = parent.querySelector(".sidebar-dropdown");
-            const arrow = parent.querySelector(".arrow-icon");
-
-            if (dropdown.classList.contains("open")) {
-              dropdown.style.height = "0px";
-              dropdown.classList.remove("open");
-              arrow.classList.remove("rotate");
-            } else {
-              dropdown.style.height = dropdown.scrollHeight + "px";
-              dropdown.classList.add("open");
-              arrow.classList.add("rotate");
-            }
-          }
-        </script>
 
         <!--Ending the one more row-->
         <footer class="text-center text-muted" style="margin-top: 10px">
@@ -433,6 +415,7 @@
     </div>
 
     <!-- Bootstrap JS -->
+    <script src="./scripts/drop-down-animation.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

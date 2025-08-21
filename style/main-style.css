@@ -80,6 +80,7 @@ body {
 }
 
 /*Top Button Icon - Two Icons*/
+
 .btn-icon {
   background-color: var(--primary-color);
   border: 1px solid var(--primary-color);
@@ -91,6 +92,7 @@ body {
   justify-content: center;
   font-size: 1.2rem;
   color: var(--white-color);
+  text-decoration: None;
 }
 
 /*For the Sideabr Animation*/
@@ -111,6 +113,12 @@ body {
 
 .arrow-icon.rotate {
   transform: rotate(180deg);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 
