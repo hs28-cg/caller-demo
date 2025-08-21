@@ -1,0 +1,315 @@
+/*Predefined Variables*/
+:root {
+  --primary-color: #0d6efd;
+  --light-blue-bg: #e9f4ff;
+  --white-color: #ffffff;
+  --text-color: #212529;
+  --text-muted-color: #6c757d;
+  --border-color: #dee2e6;
+  --success-color: #198754;
+  --danger-color: #dc3545;
+  --font-family: "Poppins", sans-serif;
+}
+
+/*Body Styling*/
+body {
+  font-family: var(--font-family);
+  background-color: var(--light-blue-bg);
+  color: var(--text-color);
+}
+
+/*Sidebar Styling*/
+.sidebar {
+  width: 340px;
+  background-color: var(--white-color);
+  border-right: 1px solid var(--border-color);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  transition: width 0.3s;
+}
+
+/*Sidebar Image Not Added*/
+
+/*Sidebar Nav Icon*/
+.sidebar .nav-link {
+  display: flex;
+  align-items: center;
+  color: var(--text-muted-color);
+  font-weight: 500;
+  padding: 12px 15px;
+  margin-bottom: 8px;
+  border-radius: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/*Icons in Sidebar*/
+.sidebar .nav-link i {
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+
+/*Sidebar elements on hover*/
+.sidebar .nav-link:hover {
+  background-color: var(--light-blue-bg);
+  color: var(--primary-color);
+}
+
+/*Sidebar Element Active*/
+.sidebar .nav-link.active {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  box-shadow: 2px 4px 8px rgba(13, 110, 253, 0.3);
+}
+
+/*Active onHover*/
+.sidebar .nav-link.active:hover {
+  color: var(--white-color);
+}
+
+/*User Profiles*/
+.user-profile {
+  background-color: #f8f9fa;
+  border: 1px solid var(--border-color);
+}
+/*End Sidebar*/
+
+/*Styling for Main-Content*/
+
+.main-content {
+  padding: 32px;
+}
+
+/*Top Button Icon - Two Icons*/
+.btn-icon {
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  /* border-radius: 12px; */
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: var(--white-color);
+}
+
+
+/*================*/
+/*
+    ABOVE IS COMMON FOR ALL THE PAGES
+*/
+/*===============*/
+
+/*Adding the button-icon for card*/
+.btn-icon-card {
+  background-color: var(--white-color);
+  border: 1px solid var(--white-color);
+  /* border-radius: 12px; */
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: var(--primary-color);
+}
+
+/*For Date Picker : Range*/
+.date-range-picker {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--white-color);
+  border: 1px solid var(--border-color);
+  padding: 8px 16px;
+  border-radius: 12px;
+  font-weight: 500;
+}
+
+/*For Positioning*/
+.date-range-picker i {
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+/*Bootstrap Card : Styling*/
+
+/*Adding Card-Header : Box-Style, Shadows, Radius*/
+
+/*Card Heading*/
+.card-header {
+  border-radius: 50px;
+}
+
+/*Card Radius*/
+.card {
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/*On card Hover*/
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0 0 0 0.1);
+}
+
+/*The Static Card*/
+.stat-card .card-body {
+  padding: 0.5rem;
+}
+
+/*The Static Icon Inside The Static Box*/
+.stat-icon {
+  /* width: 30px; */
+  /* height: 60px; */
+  border-radius: 50%;
+  background-color: var(--light-blue-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Top Static cards with number icons in main page*/
+.stat-icon i{
+    font-size: 10px;
+}
+
+.stat-card h3 {
+  font-size: 1.45rem;
+  margin-bottom: 0.25rem;
+}
+
+.stat-card p {
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+
+.stat-card small {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+/*Adding the circle*/
+
+.chart-circle {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.chart-circle::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  background: var(--white-color);
+  border-radius: 50%;
+}
+
+.chart-percent {
+  font-size: 1.45rem;
+  font-weight: 800;
+  z-index: 1;
+}
+
+.chart-circle.red {
+  background: conic-gradient(#f44336 80%, #e0e0e0 80%);
+  color:red;
+  font-family: var(--font-family);
+}
+
+.chart-circle.green {
+  background: conic-gradient(#4caf50 22%, #e0e0e0 22%);
+  color:green;
+  font-family: var(--font-family);
+}
+
+.chart-circle.yellow {
+  background: conic-gradient(#ffc107 36%, #e0e0e0 36%);
+  color: #ffc107;
+}
+
+.chart-circle.blue {
+  background: conic-gradient(#f44336 80%, #e0e0e0 80%);
+  color:red;
+}
+
+/*Need to add heat maps here*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*For the excel view*/
+#user-list-container {
+  height: 65vh;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+.call-log-item {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.25rem 1.5rem; /* Increased padding */
+  margin-bottom: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 15px; /* Curved radius */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.call-log-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.call-status-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: var(--white-color);
+  font-size: 1.5rem;
+}
+
+.call-status-icon.status-success {
+  background-color: var(--success-color);
+}
+.call-status-icon.status-fail {
+  background-color: var(--danger-color);
+}
+
+.call-details {
+  flex-grow: 1;
+}
+.call-details h5 {
+  font-weight: 600;
+}
+.call-duration {
+  font-weight: 500;
+  color: var(--text-muted-color);
+}
