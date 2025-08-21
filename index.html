@@ -207,7 +207,7 @@
         <!--Analytics & Scoring Card-->
         <div class="row g-4" style="margin-top: 10px">
           <div class="col-md-3">
-            <div class="card analytics-card h-80">
+            <div class="card analytics-card h-100">
               <div
                 class="card-header d-flex justify-content-between align-items-center bg-white border-0 pt-3"
               >
@@ -241,7 +241,9 @@
                 class="card-header d-flex justify-content-between align-items-center bg-white border-0 pt-3"
               >
                 <h5 class="fw-bold">Customer Risk Scoring</h5>
-                <i class="ph ph-dots-three-outline-vertical"></i>
+                <button class="btn btn-icon-card">
+                  <i class="ph ph-dots-three-outline-vertical"></i>
+                </button>
               </div>
               <div
                 class="card-body d-flex justify-content-around align-items-center"
@@ -267,23 +269,117 @@
               <div
                 class="card-header d-flex justify-content-between align-items-center bg-white border-0 pt-3"
               >
-                <h5 class="fw-bold">Heatmaps</h5>
-                <i class="ph ph-dots-three-outline-vertical"></i>
+                <h5 class="fw-bold">Payment Pattern Analysis</h5>
+                <button class="btn btn-icon-card">
+                  <i class="ph ph-dots-three-outline-vertical"></i>
+                </button>
               </div>
               <div
                 class="card-body d-flex justify-content-around align-items-center"
               >
                 <div class="text-center">
                   <!--Inside this Place the Heatmaps-->
+                  <div class="payment-analysis">
+                    <div class="bar-chart">
+                      <div class="bar red" style="height: 60%"></div>
+                      <div class="bar yellow" style="height: 80%"></div>
+                      <div class="bar red" style="height: 40%"></div>
+                      <div class="bar yellow" style="height: 70%"></div>
+                      <div class="bar red" style="height: 60%"></div>
+                      <div class="bar yellow" style="height: 25%"></div>
+                    </div>
+
+                    <div class="bar-labels">
+                      <span>Delays</span>
+                      <span style="margin-left: 20px"
+                        >Partial<br />Payment</span
+                      >
+                      <span style="margin-left: 10px">Over<br />payments</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Adding one more graph next to it-->
+
+          <div class="col-md-3">
+            <div class="card analytics-card h-80">
+              <div
+                class="card-header d-flex justify-content-between align-items-center bg-white border-0 pt-3"
+              >
+                <h5 class="fw-bold">Top Accounts Heatmaps</h5>
+                <button class="btn btn-icon-card">
+                  <i class="ph ph-dots-three-outline-vertical"></i>
+                </button>
+              </div>
+              <div
+                class="card-body d-flex justify-content-around align-items-center"
+              >
+                <div class="text-center">
+                  <!--Inside this Place the Heatmaps-->
+                  <div class="heatmap-legend">
+                    <div class="legend-item">
+                      <div class="legend-color blue"></div>
+                      <span>One Time</span>
+                    </div>
+                    <div class="legend-item">
+                      <div class="legend-color red"></div>
+                      <span>Partial</span>
+                    </div>
+                  </div>
+                  <img
+                    src="./asset/img_image_1.png"
+                    alt="Heatmap"
+                    class="heatmap-image"
+                  />
+                  <div
+                    style="
+                      text-align: center;
+                      margin: 8px 0;
+                      font-size: 12px;
+                      color: #464154;
+                    "
+                  >
+                    Outstanding Balance
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- End Analytics & Scoring Card -->
 
-        <footer class="text-center text-muted mt-5">
-          <small>© Copgemini 2025. all rights reserved.</small>
+        <!-- End Analytics & Scoring Card -->
+        <!--Adding one more row -->
+        <div class="row" style="margin-top: 33px">
+          <div class="col-lg-6">
+            <div class="card analytics-card h-100">
+              <div
+                class="card-header d-flex justify-content-between align-items-center bg-white border-0 pt-3"
+              >
+                <h5 class="fw-bold">Aging Impact Dashboard</h5>
+                <i class="ph ph-dots-three-outline-vertical"></i>
+              </div>
+              <div
+                class="card-body d-flex justify-content-around align-items-center"
+              >
+                <div class="chart-area">
+                  <img
+                    src="./asset/img_vector_7.png"
+                    alt="Aging Chart"
+                    style="width: 100%; height: 100%; object-fit: contain"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Ending the one more row-->
+        <footer class="text-center text-muted" style="margin-top: 10px">
+          <small style="color: #6495ed; font-weight: 800"
+            >© Copgemini 2025. all rights reserved.</small
+          >
         </footer>
       </main>
     </div>
