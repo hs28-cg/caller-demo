@@ -270,7 +270,6 @@ ul {
 }
 
 /*Adding the styling for the bar chart*/
-
 .bar-chart {
   display: flex;
   align-items: end;
@@ -396,6 +395,7 @@ ul {
     }
 }
 
+/*Need to check this*/
 .aging-dashboard {
     background-color: #ffffff;
     border-radius: 14px;
@@ -436,18 +436,11 @@ ul {
     }
 }
 
-
-
-
-
-
-
-
-
-
 /*For the excel view*/
+
+/*This is used to view the excel column*/
 #user-list-container {
-  height: 65vh;
+  height: 50vh;
   overflow-y: auto;
   padding-right: 0.5rem;
 }
