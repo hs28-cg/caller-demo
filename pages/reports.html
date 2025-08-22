@@ -19,8 +19,10 @@
     <!--Style Sheets-->
     <link rel="stylesheet" href="../style/main-style.css" />
     <link rel="stylesheet" href="../style/reports-style.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
 
     <!--Icons-->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
@@ -318,7 +320,7 @@
       document.addEventListener("DOMContentLoaded", function () {
         const allUsers = [
           {
-            // Edit this Details, Add them same from the excel sheet only 
+            // Edit this Details, Add them same from the excel sheet only
             name: "MAX",
             phone: "040-123-123",
             reason: "credit",
@@ -342,8 +344,22 @@
             date: "2025-08-02",
             status: "Success",
           },
-          { name: "MARK", phone: "040-444-222", reason: "bill", amount: 550.50, date: "2025-08-02", status: "Not Picked" },
-          { name: "JOHN", phone: "040-222-999", reason: "bill", amount: 123.00, date: "2025-08-03", status: "Success" },
+          {
+            name: "MARK",
+            phone: "040-444-222",
+            reason: "bill",
+            amount: 550.5,
+            date: "2025-08-02",
+            status: "Not Picked",
+          },
+          {
+            name: "JOHN",
+            phone: "040-222-999",
+            reason: "bill",
+            amount: 123.0,
+            date: "2025-08-03",
+            status: "Success",
+          },
         ];
 
         const container = document.getElementById("cardsContainer");
