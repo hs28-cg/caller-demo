@@ -7,6 +7,13 @@
   padding: 1.5rem;
   background-color: var(--white-color);} */
 
+.sidebar {
+  width: 440px;
+  background-color: var(--white-color);
+  border-right: 1px solid var(--border-color);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  transition: width 0.3s;
+}
 
 .filter-bar{
     display: flex;
@@ -120,6 +127,13 @@
 span.flatpickr-weekday {
   color: var(--text-color);
   font-weight: 500;
+}
+
+/*Trying to add scroll-bar to container*/
+#cardsContainer {
+  max-height: 500px; /* Adjust height as needed */
+  overflow-y: auto;  /* Enables vertical scrolling */
+  padding-right: 4px; /* Optional: prevents content from being hidden behind scrollbar */
 }
 
 
