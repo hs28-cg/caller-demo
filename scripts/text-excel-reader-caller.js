@@ -108,28 +108,16 @@ document.addEventListener("DOMContentLoaded", function () {
     // const Amount = currentCard ?.dataset.Invoice_Amount : 'the user';
 
     const messages = [
-      { sender: "user", text: `${userName} : Hello who's this?` },
-      {
-        sender: "bot",
-        text: `Call Agent : Hello, ${userName}, this is Tom from Capgemini. I hope you're doing well. I'm reaching out regarding an unpaid invoice of $${amount} for "${reason}" that was due on August 01, 2025. Could you please confirm the payment status?`,
-      },
-      { sender: "user", text: `User : I made the payment already.` },
-      {
-        sender: "bot",
-        text: `Call Agent : Thank you for letting me know, ${userName}. Could you please provide the payment confirmation or transaction details so we can verify and update our records? Thanks for your help!`,
-      },
-      { sender: "user", text: "User : Sure, I will share it via mail" },
-      {
-        sender: "bot",
-        text: `Call Agent : Got it, ${userName}. I'll check our email records for the payment confirmation. If we need any more information, I'll be in touch. Thanks for your patience and for handling this!`,
-      },
-      { sender: "user", text: "User : Sure, please check and let me Know" },
-      {
-        sender: "bot",
-        text: `Call Agent : I'll review our email records and confirm the payment for you, ${userName}. Thank you for your patience. If everything checks out, I'll update you as soon as possible. Have a great day!`,
-      },
-      { sender: "user", text: "User : Sure. Thank you" },
-      { sender: "bot", text: "Call Agent : Thank you for your time. Goodbye!" },
+{ 
+  sender: "bot", 
+  text: `Call Agent : You are calling, ${userName}, Act as Tom from Capgemini. You are reaching out regarding an unpaid invoice of $${amount} for "${reason}" that was due on August 01, 2025. Act as a professional collections agent responsible for contacting customers regarding overdue payments. Your goal is to recover outstanding dues while maintaining a respectful, empathetic, and solution-oriented approach. Use a courteous, calm, and confident tone. Be empathetic but firm, solution-focused, and non-confrontational. Always verify the customer's identity before discussing account details. Use clear, polite language and avoid aggressive phrasing. Listen actively and acknowledge the customer’s situation. Offer flexible solutions when possible, such as payment plans. Avoid threats or ultimatums; instead, emphasize resolution and cooperation. Maintain confidentiality and professionalism at all times. Begin calls with: "Hello", State the reason clearly: "I'm reaching out to discuss a pending balance that appears to be overdue. I’d like to help you resolve this today." Close with: "Thank you for your time, and I appreciate your cooperation. If you have any questions or need support, feel free to reach out."
+` 
+},
+{ 
+  sender: "bot", 
+  text: "Sending.. Context to Caller Agent" 
+}
+
     ];
 
     const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
