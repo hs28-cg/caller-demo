@@ -176,12 +176,6 @@
             <option value="success">Success</option>
             <option value="notpicked">Not Picked</option>
           </select>
-          <input
-            type="text"
-            id="date-range-picker"
-            class="form-control"
-            placeholder="Select Date Range"
-          />
           <select id="sortFilter" class="form-select">
             <option value="date">Sort by Date</option>
             <option value="amount">Sort by Amount</option>
@@ -414,7 +408,7 @@
             const statusClass =
               user.status === "Success" ? "status-success" : "status-fail";
             card.innerHTML = `
-            <div class="card report-card">
+            <div class="card report-card" style ="background-color : smokewhite;">
               <h5 class="card-title">${user.name}</h5>
               <p><strong>Reason:</strong> ${user.reason}</p>
               <p><strong>Due Amount:</strong> $${user.amount.toFixed(2)}</p>
