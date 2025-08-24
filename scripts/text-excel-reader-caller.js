@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       let statusHTML = "";
       if (index === 0)
-        statusHTML = `<div class="mt-2 status-field"><strong class="text-warning">Status: In Progress</strong></div>`;
+        statusHTML = `<div class="mt-2 status-field"><strong class="text-warning">Status: Generating User Context</strong></div>`;
       else
         statusHTML = `<div class="mt-2 status-field"><strong class="text-muted">Status: Pending</strong></div>`;
 
@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
   async function startAnimatedConversation() {
     transcriptionBox.innerHTML = "";
     speakBtn.disabled = true;
-    speakBtn.textContent = "Conversation in Progress...";
+    speakBtn.textContent = "Context Generation in Progress...";
 
     const userCards = document.querySelectorAll(".account-card");
     const currentCard = Array.from(userCards).find((card) =>
@@ -153,6 +153,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     speakBtn.disabled = false;
-    speakBtn.textContent = "Speak to the User";
+    speakBtn.textContent = "Generate for next user";
   }
 });

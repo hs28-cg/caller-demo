@@ -40,9 +40,10 @@
     <div class="d-flex">
       <nav class="sidebar vh-100 p-4 d-flex flex-column justify-content-center">
         <div>
-          <div class="sidebar-header d-flex align-items-center mb-5">
+        <img src="../../asset/logo.png">
+        <h5 class="headd text-primary fw-bold" style="margin-left: 40px; margin-top: 10px;">AR Webportal</h5>
+          <div class="sidebar-header d-flex align-items-center mb-3">
             <!--Need to add CG Logo-->
-            <h5 class="text-primary fw-bold">AR Webportal</h5>
           </div>
           <ul class="nav flex-column">
             <li class="nav-item">
@@ -115,7 +116,7 @@
               </a>
             </li>
           </ul>
-          <div class="chats-history mt-5">
+          <div class="chats-history mt-1">
             <h6 class="text-muted fw-bold ps-3 mb-3">Call History</h6>
             <ul class="nav flex-column">
               <li class="nav-item">
@@ -134,7 +135,7 @@
             </ul>
           </div>
         </div>
-        <div class="user-profile d-flex align-items-center p-2 rounded-3" style="margin-top: 25px;">
+        <div class="user-profile d-flex align-items-center p-2 rounded-3" style="margin-top: 10px;">
           <i class="ph-bold ph-user p-1"></i>
           <div class="flex-grow-1">
             <h6 class="mb-0 fw-bold">John Doe</h6>
@@ -181,7 +182,8 @@
             </div>
 
             <!-- Client Grid -->
-        <div class="scroll-container" style="max-height:300px; overflow-y :auto;">
+             <!--change the height here for the scroll-->
+        <div class="scroll-container" style="max-height:450px; overflow-y :auto;">
 
             <div class="row g-4">
                 <!-- Client Card 1 -->
@@ -189,9 +191,10 @@
                     <div class="card client-card text-center p-3">
                         <div class="client-avatar bg-primary text-white rounded-circle mx-auto mb-2" style="width:50px;height:50px;display:flex;align-items:center;justify-content:center;font-weight:bold;">M</div>
                         <h5 class="client-name fw-bold">MAX</h5>
-                        <p class="client-info mb-1">Total Calls: <span style="font-weight:600;">12</span></p>
+                        <p class="client-info mb-1">Total Calls: <span style="font-weight:600;">22</span></p>
                         <p class="client-info mb-1" style="color:#6c757d;"><small>Last Contact: 2025-08-19</small></p>
-                        <p class="mb-2"><span style="color:green;font-weight:600;">Call Status: Success</span></p>
+                        <p class="mb-2"><span style="color:red;font-weight:600;">Call Status: Not Received</span></p>
+                        <button class="btn btn-danger mt-2" data-bs-toggle="modal" data-client-name="MAX">User Flagged</button>
                         <button class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#historyModal" data-client-name="MAX">View Full History</button>
                     </div>
                 </div>

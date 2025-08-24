@@ -29,6 +29,10 @@ body {
 }
 
 /*Sidebar Image Not Added*/
+.headd{
+  font-family: var(--font-family);
+  text-shadow: #212529;
+}
 
 /*Sidebar Nav Icon*/
 .sidebar .nav-link {
