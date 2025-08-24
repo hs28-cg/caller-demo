@@ -24,8 +24,8 @@ document.addEventListener("DOMContentLoaded", function () {
       date: "2025-08-02",
       status: "Success",
     },
-    // { name: "MARK", phone: "040-444-222", reason: "bill", amount: 550.50, date: "2025-08-02", status: "Not Picked" },
-    // { name: "JOHN", phone: "040-222-999", reason: "bill", amount: 123.00, date: "2025-08-03", status: "Success" },
+    { name: "MARK", phone: "040-444-222", reason: "bill", amount: 550.50, date: "2025-08-02", status: "Not Picked" },
+    { name: "JOHN", phone: "040-222-999", reason: "bill", amount: 123.00, date: "2025-08-03", status: "Success" },
   ];
 
   const container = document.getElementById("cardsContainer");

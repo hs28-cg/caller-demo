@@ -144,7 +144,7 @@
             class="fw-bold"
             style="font-size: 1.4rem; padding-left: 1.01rem; padding-top: 5px"
           >
-            Agent Reports
+            Call Agent Reports
           </h2>
           <div class="d-flex align-items-center">
             <span class="text-muted me-3"
@@ -212,11 +212,42 @@
               aria-label="Close"
             ></button>
           </div>
+          <!--Below in the div we can replace it with the message-->
+
+          <!--After each call we need to display the entire transcript here-->
           <div class="modal-body">
             <textarea
               class="form-control"
               rows="10"
-              placeholder="Enter call transcript here..."
+              placeholder="
+
+MAX         : Hello, who's this?
+Call Agent  : Hello, MAX, this is Tom from Capgemini. I hope you're doing well.
+              I'm reaching out regarding an unpaid invoice of $500.00 for credit
+              that was due on August 01, 2025. Could you please confirm the payment status?
+
+MAX         : I made the payment already.
+
+Call Agent  : Thank you for letting me know, MAX.
+              Could you please provide the payment confirmation or transaction details
+              so we can verify and update our records? Thanks for your help!
+
+MAX         : Sure, I will share it via mail.
+
+Call Agent  : Got it, MAX. I'll check our email records for the payment confirmation.
+              If we need any more information, I'll be in touch.
+              Thanks for your patience and for handling this!
+
+MAX         : Sure, please check and let me know.
+
+Call Agent  : I'll review our email records and confirm the payment for you, MAX.
+              Thank you for your patience. If everything checks out,
+              I'll update you as soon as possible. Have a great day!
+
+MAX         : Sure. Thank you.
+
+Call Agent  : Thank you for your time. Goodbye!
+              "
             ></textarea>
           </div>
           <div class="modal-footer">
@@ -258,42 +289,42 @@
             <table class="table table-bordered">
               <thead>
                 <tr>
-                  <th>Detail 1</th>
-                  <th>Detail 2</th>
-                  <th>Detail 3</th>
-                  <th>Detail 4</th>
+                  <th>Important Key Points</th>
+                  <th>Yes / No</th>
+                  <!-- <th>Detail 3</th>
+                  <th>Detail 4</th> -->
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td contenteditable="true"></td>
                   <td contenteditable="true"></td>
-                  <td contenteditable="true"></td>
-                  <td contenteditable="true"></td>
+                  <!-- <td contenteditable="true"></td>
+                  <td contenteditable="true"></td> -->
                 </tr>
                 <tr>
                   <td contenteditable="true"></td>
                   <td contenteditable="true"></td>
-                  <td contenteditable="true"></td>
-                  <td contenteditable="true"></td>
+                  <!-- <td contenteditable="true"></td>
+                  <td contenteditable="true"></td> -->
                 </tr>
                 <tr>
                   <td contenteditable="true"></td>
                   <td contenteditable="true"></td>
-                  <td contenteditable="true"></td>
-                  <td contenteditable="true"></td>
+                  <!-- <td contenteditable="true"></td>
+                  <td contenteditable="true"></td> -->
                 </tr>
                 <tr>
                   <td contenteditable="true"></td>
                   <td contenteditable="true"></td>
-                  <td contenteditable="true"></td>
-                  <td contenteditable="true"></td>
+                  <!-- <td contenteditable="true"></td>
+                  <td contenteditable="true"></td> -->
                 </tr>
                 <tr>
                   <td contenteditable="true"></td>
                   <td contenteditable="true"></td>
-                  <td contenteditable="true"></td>
-                  <td contenteditable="true"></td>
+                  <!-- <td contenteditable="true"></td>
+                  <td contenteditable="true"></td> -->
                 </tr>
               </tbody>
             </table>
@@ -387,16 +418,14 @@
               <p><strong>Reason:</strong> ${user.reason}</p>
               <p><strong>Due Amount:</strong> $${user.amount.toFixed(2)}</p>
               <p class="text-muted"><small>Due Date: ${user.date}</small></p>
-              <p class="status-text ${statusClass}"><strong>Status:</strong> ${
+              <p class="status-text ${statusClass}"><strong>Call Status:</strong> ${
               user.status
             }</p>
               <div class="card-actions">
                 <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#transcriptModal" data-user-name="${
                   user.name
+                  //Below this add the other button
                 }">View Transcript</button>
-                <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#detailsModal" data-user-name="${
-                  user.name
-                }">View Details</button>
               </div>
             </div>`;
             container.appendChild(card);
@@ -447,3 +476,13 @@
     </script>
   </body>
 </html>
+
+
+
+
+
+<!--You can add this extra button after the View Transcript this will allow you to show a series of table -->
+
+                <!-- <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#detailsModal" data-user-name="${
+                user.name
+                 }">Additional Remark</button> -->
