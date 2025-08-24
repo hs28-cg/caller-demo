@@ -7,7 +7,7 @@
   background-color: var(--light-blue-bg);
 }
 #user-list-container {
-  max-height: 50vh;
+  max-height: 80vh;
   overflow-y: auto;
   padding-right: 0.5rem;
 }
