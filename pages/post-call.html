@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Reports : AR Portal</title>
+    <title>Post Call Summaries : AR Portal</title>
 
     <!--The CDN-->
     <link
@@ -61,7 +61,11 @@
             </li> -->
 
             <li class="nav-item">
-              <a class="nav-link" href="#" onclick="toggleDropdown(event)">
+              <a
+                class="nav-link active"
+                href="#"
+                onclick="toggleDropdown(event)"
+              >
                 <i class="ph ph-user-list"></i>
                 <span>Calls</span>
                 <i class="ph ph-caret-down arrow-icon"></i>
@@ -74,10 +78,7 @@
                   </a>
                 </li>
                 <li>
-                  <a
-                    class="nav-link dropdown-item"
-                    href="./post-call.html"
-                  >
+                  <a class="nav-link dropdown-item active" href="#">
                     <i class="ph ph-phone-disconnect"></i>
                     <span>Post Call</span>
                   </a>
@@ -86,7 +87,7 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link active" href="./reports.html">
+              <a class="nav-link" href="./reports.html">
                 <i class="ph ph-chat-circle-dots"></i>
                 <span>Reports</span>
               </a>
@@ -125,7 +126,10 @@
             </ul>
           </div>
         </div>
-        <div class="user-profile d-flex align-items-center p-2 rounded-3" style="margin-top: 25px;">
+        <div
+          class="user-profile d-flex align-items-center p-2 rounded-3"
+          style="margin-top: 25px"
+        >
           <i class="ph-bold ph-user p-1"></i>
           <div class="flex-grow-1">
             <h6 class="mb-0 fw-bold">John Doe</h6>
@@ -144,7 +148,7 @@
             class="fw-bold"
             style="font-size: 1.4rem; padding-left: 1.01rem; padding-top: 5px"
           >
-            Call Agent Reports
+            Post Call Agent Reports
           </h2>
           <div class="d-flex align-items-center">
             <span class="text-muted me-3"
@@ -180,6 +184,18 @@
             <option value="date">Sort by Date</option>
             <option value="amount">Sort by Amount</option>
           </select>
+          <!--Small button script to upload data for webcollect it will be done automatically-->
+          <button class="btn btn-primary" onclick="handleUpload(this)">
+            Upload data to webcollect
+          </button>
+
+          <script>
+            function handleUpload(button) {
+              alert("Manually entered data entered and saved to webcollect");
+              button.classList.remove("btn-primary");
+              button.classList.add("btn-success");
+            }
+          </script>
         </div>
 
         <!-- Report Cards Scrollable Container -->
@@ -219,35 +235,8 @@
             <textarea
               class="form-control"
               rows="10"
-              placeholder="
-
-MAX         : Hello, who's this?
-Call Agent  : Hello, MAX, this is Tom from Capgemini. I hope you're doing well.
-              I'm reaching out regarding an unpaid invoice of $500.00 for credit
-              that was due on August 01, 2025. Could you please confirm the payment status?
-
-MAX         : I made the payment already.
-
-Call Agent  : Thank you for letting me know, MAX.
-              Could you please provide the payment confirmation or transaction details
-              so we can verify and update our records? Thanks for your help!
-
-MAX         : Sure, I will share it via mail.
-
-Call Agent  : Got it, MAX. I'll check our email records for the payment confirmation.
-              If we need any more information, I'll be in touch.
-              Thanks for your patience and for handling this!
-
-MAX         : Sure, please check and let me know.
-
-Call Agent  : I'll review our email records and confirm the payment for you, MAX.
-              Thank you for your patience. If everything checks out,
-              I'll update you as soon as possible. Have a great day!
-
-MAX         : Sure. Thank you.
-
-Call Agent  : Thank you for your time. Goodbye!
-              "
+              placeholder="Tom from Capgemini contacted MAX regarding an unpaid invoice of $500.00 that was due on August 01, 2025. MAX confirmed that the payment had already been made. Tom requested payment confirmation or transaction details to verify and update records. MAX agreed to share the details via mail. Tom acknowledged and said he would check email records and follow up if needed. MAX asked Tom to confirm once the records are reviewed. Tom assured MAX that he would review and update accordingly. The call ended with thanks and a goodbye.
+"
             ></textarea>
           </div>
           <div class="modal-footer">
@@ -258,7 +247,11 @@ Call Agent  : Thank you for your time. Goodbye!
             >
               Close
             </button>
-            <button type="button" class="btn btn-primary">
+            <button
+              type="button"
+              class="btn btn-primary"
+              onclick="alert('Transcript Saved')"
+            >
               Save Transcript
             </button>
           </div>
@@ -290,7 +283,7 @@ Call Agent  : Thank you for your time. Goodbye!
               <thead>
                 <tr>
                   <th>Important Key Points</th>
-                  <th>Yes / No</th>
+                  <!-- <th>Yes / No</th> -->
                   <!-- <th>Detail 3</th>
                   <th>Detail 4</th> -->
                 </tr>
@@ -298,31 +291,31 @@ Call Agent  : Thank you for your time. Goodbye!
               <tbody>
                 <tr>
                   <td contenteditable="true"></td>
-                  <td contenteditable="true"></td>
+                  <!-- <td contenteditable="true"></td> -->
                   <!-- <td contenteditable="true"></td>
                   <td contenteditable="true"></td> -->
                 </tr>
                 <tr>
                   <td contenteditable="true"></td>
-                  <td contenteditable="true"></td>
+                  <!-- <td contenteditable="true"></td> -->
                   <!-- <td contenteditable="true"></td>
                   <td contenteditable="true"></td> -->
                 </tr>
                 <tr>
                   <td contenteditable="true"></td>
-                  <td contenteditable="true"></td>
+                  <!-- <td contenteditable="true"></td> -->
                   <!-- <td contenteditable="true"></td>
                   <td contenteditable="true"></td> -->
                 </tr>
                 <tr>
                   <td contenteditable="true"></td>
-                  <td contenteditable="true"></td>
+                  <!-- <td contenteditable="true"></td> -->
                   <!-- <td contenteditable="true"></td>
                   <td contenteditable="true"></td> -->
                 </tr>
                 <tr>
                   <td contenteditable="true"></td>
-                  <td contenteditable="true"></td>
+                  <!-- <td contenteditable="true"></td> -->
                   <!-- <td contenteditable="true"></td>
                   <td contenteditable="true"></td> -->
                 </tr>
@@ -337,7 +330,14 @@ Call Agent  : Thank you for your time. Goodbye!
             >
               Close
             </button>
-            <button type="button" class="btn btn-primary">Save Details</button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              onclick="alert('Additional Report saved for user')"
+            >
+              Save Report
+            </button>
+            <!--Additionally, I can take the Data and save it in excel sheet-->
           </div>
         </div>
       </div>
@@ -414,10 +414,8 @@ Call Agent  : Thank you for your time. Goodbye!
             card.innerHTML = `
             <div class="card report-card">
               <h5 class="card-title">${user.name}</h5>
-              <p><strong>Phone:</strong> ${user.phone}</p>
               <p><strong>Reason:</strong> ${user.reason}</p>
               <p><strong>Due Amount:</strong> $${user.amount.toFixed(2)}</p>
-              <p class="text-muted"><small>Due Date: ${user.date}</small></p>
               <p class="status-text ${statusClass}"><strong>Call Status:</strong> ${
               user.status
             }</p>
@@ -425,7 +423,11 @@ Call Agent  : Thank you for your time. Goodbye!
                 <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#transcriptModal" data-user-name="${
                   user.name
                   //Below this add the other button
-                }">View Transcript</button>
+                }">Veiw Summary</button>
+
+                <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#detailsModal" data-user-name="${
+                  user.name
+                }">Additional Remark</button>
               </div>
             </div>`;
             container.appendChild(card);
@@ -477,12 +479,8 @@ Call Agent  : Thank you for your time. Goodbye!
   </body>
 </html>
 
-
-
-
-
 <!--You can add this extra button after the View Transcript this will allow you to show a series of table -->
 
-                <!-- <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#detailsModal" data-user-name="${
+<!-- <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#detailsModal" data-user-name="${
                 user.name
                  }">Additional Remark</button> -->

@@ -60,6 +60,11 @@ body {
   color: var(--white-color);
   box-shadow: 2px 4px 8px rgba(13, 110, 253, 0.3);
 }
+.active-lite{
+  background-color: lightblue;
+  color: var(--white-color);
+  box-shadow: 2px 4px 8px rgba(13, 110, 253, 0.3);
+}
 
 /*Active onHover*/
 .sidebar .nav-link.active:hover {
