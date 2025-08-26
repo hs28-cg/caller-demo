@@ -497,3 +497,27 @@ ul {
   font-weight: 500;
   color: var(--text-muted-color);
 }
+
+
+/* Logo with responsive width */
+.portal-logo {
+  width: 20vw;        /* 20% of viewport width */
+  max-width: 250px;   /* prevents it from being too big */
+  min-width: 80px;    /* prevents it from being too small */
+  height: auto;
+  padding: 10px;
+}
+
+/* Text scales proportionally to logo */
+.portal-title {
+  font-size: calc(0.07 * 20vw);  /* 10% of logo width */
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+/* Optional: keep text from being too big or small */
+@media (max-width: 768px) {
+  .portal-title {
+    font-size: 1rem;  /* min size on mobile */
+  }
+}
